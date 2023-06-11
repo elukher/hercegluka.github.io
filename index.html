@@ -11,12 +11,16 @@
     <div>
         <!-- Navigation bar -->
         <nav>
-            <div class="flex fixed justify-center items-center inset-x-0 top-0 py-3 bg-sky-50 z-50 border-b-2 border-sky-600 hover:bg-sky-200 transition ease-in-out duration-300">
-                <div class="font-roboto">Luka.</div>
-            </div>
+            <div class="font-indie text-sky-600 flex fixed justify-around items-center py-3 inset-x-0 top-0 bg-sky-50 z-50 border-b-2 border-sky-600 hover:bg-sky-200 transition ease-in-out duration-300">
+                <div class="font-bold">Luka.</div>
+                <a class="flex justify-center items-center align-middle hover:font-bold"
+                    href=mailto:“luka.herceg91@gmail.com”>
+                    <span class="mx-3">Contact me</span>
+                    <ion-icon  name="mail-unread-outline"></ion-icon>
+                </a>
         </nav>
         <!-- Content -->
-        <main class="font-merrie sm:mx-6 md:mx-24 my-12 sm:my-18 md:my-20">
+        <main class="font-merrie sm:mx-6 md:mx-24 lg:mx-24 my-12 sm:my-18 md:my-20 lg:my-20">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-3 gap-y-6 lg:gap-y-44 text-gray-600">
                 <div class="card flex bg-sky-50 p-4 rounded-xl shadow-md hover:bg-sky-200 hover:shadow-xl hover:text-gray-800 transition ease-in-out duration-300">
                     <div class="flex-1">
@@ -30,7 +34,7 @@
                             <p>With confidence I can say I learned a lot, but this kind of work is never ending learning proccess.</p>
                             <p>Each task brings new challenges and requires <b>learning</b> new stuff.</p>
                             <p><b>Team work</b> is essential for success so good relations between team members is a must.</p>
-                            <p>Also, Without <b>hard work</b> there is no success. </p>
+                            <p>Also, without <b>hard work</b> there is no success. </p>
 
                         </div>
                     </div>
@@ -137,6 +141,8 @@
             </div>
         </main>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="src/script.js"></script>
 </body>
 </html>
