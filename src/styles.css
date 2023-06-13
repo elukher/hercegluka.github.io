@@ -8,14 +8,18 @@ p {
     @apply my-4 hover:italic;
 }
 
-b {
-    @apply text-black underline;
-}
-
 ul {
     @apply list-disc list-inside my-4;
 }
 
 li {
     @apply text-gray-500 list-inside hover:italic;
+}
+
+a {
+    @apply hover:text-orange-500
+}
+
+.title {
+    @apply text-sky-600 font-semibold
 }
