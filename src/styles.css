@@ -5,7 +5,7 @@
 @import "tailwindcss/utilities";
 
 p {
-    @apply my-4 hover:italic;
+    @apply my-4;
 }
 
 ul {
@@ -13,7 +13,7 @@ ul {
 }
 
 li {
-    @apply text-gray-500 list-inside hover:italic;
+    @apply text-gray-500 list-inside;
 }
 
 a {
@@ -22,4 +22,8 @@ a {
 
 .title {
     @apply text-sky-600 font-semibold
+}
+
+.card {
+    @apply lg:mx-20 lg:my-10 xl:mx-40 xl:my-20 border-b-2 border-t-2 border-sky-600 
 }

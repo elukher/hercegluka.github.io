@@ -648,6 +648,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.flex-col{
+  flex-direction: column;
+}
+
 .items-start{
   align-items: flex-start;
 }
@@ -714,6 +718,11 @@ video {
 .bg-sky-50{
   --tw-bg-opacity: 1;
   background-color: rgb(240 249 255 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
 }
 
 .p-2{
@@ -835,10 +844,6 @@ p{
   margin-bottom: 1rem;
 }
 
-p:hover{
-  font-style: italic;
-}
-
 ul{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -852,22 +857,40 @@ li{
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-li:hover{
-  font-style: italic;
-}
-
 a:hover{
   --tw-text-opacity: 1;
   color: rgb(249 115 22 / var(--tw-text-opacity));
 }
 
 .title{
-  margin: 0.75rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(2 132 199 / var(--tw-text-opacity));
+}
+
+.card{
+  border-bottom-width: 2px;
+  border-top-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(2 132 199 / var(--tw-border-opacity));
+}
+
+@media (min-width: 1024px){
+  .card{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .card{
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
 }
 
 @keyframes pulse{
@@ -968,10 +991,6 @@ a:hover{
 
   .lg\:hidden{
     display: none;
-  }
-
-  .lg\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:gap-y-44{
